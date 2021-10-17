@@ -29,3 +29,4 @@ const sum4 = () =>{
 // arguments object do not work with arrow function cz it is es5 element
 // sum4(4,5); //error
 // sum4(4,5,6,7); //error
+
