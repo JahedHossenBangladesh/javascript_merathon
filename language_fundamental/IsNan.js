@@ -12,3 +12,6 @@ console.log(isFinite(5*6)) //true
 console.log(isFinite(Number.MAX_VALUE *4)) //false
 console.log(isFinite(Infinity)) //false 
 
+// Nan == Nan is false
+// isNan is not a number 
+// isFinite find Nan and Infinity
