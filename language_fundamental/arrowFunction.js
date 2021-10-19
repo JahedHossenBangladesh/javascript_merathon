@@ -26,4 +26,4 @@ console.log(test2(1,3));
     () =>{
         console.log('IIAF')
     }
-)
+)();
