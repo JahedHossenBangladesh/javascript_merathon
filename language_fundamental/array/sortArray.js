@@ -13,3 +13,33 @@ fruits.sort(function(a,b) {
 })
 
 console.log(fruits);
+
+
+const employees = [
+    {
+        eN0:1001, sarary:4000, name:'John',
+    },
+    {
+        eN0:1002, sarary:5000, name:'Mike',
+    },
+{
+    eN0:1003, sarary:6000, name:'Mary',
+},
+{
+    eN0:1004, sarary:7000, name:'Sara',
+}
+]
+
+employees.sort(function(a,b) {
+    if(a.salary < b.salary){
+        return -1;
+    }
+    if(a.salary > b.salary){
+        return 1;
+    }
+    if(a.salary == b.salary){
+        return 0;
+    }
+})
+
+console.log(employees);
