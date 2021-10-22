@@ -1,0 +1,5 @@
+String basics - string data type 
+unicode - [UTF-16] - \u 
+
+🍎
+🍌
