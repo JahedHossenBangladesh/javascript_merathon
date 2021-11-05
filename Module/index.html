@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>this is module</h1>
+    <script type="module">
+      //   import { cal } from "./cal.js";
+      //   cal();
+      //   import all
+      import * as cal from "./cal.js";
+      cal.cal();
+      //   import  by name
+      import { total, sub as suball } from "./another.js";
+      console.log(total(1, 2));
+      console.log(suball(1, 2));
+      // default import 
+      import defaultCal from "./default.js";
+      console.log(defaultCal(1, 2));
+    </script>
+  </body>
+</html>
