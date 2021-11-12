@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: inline">
+      <div id="div1" style="border: 2px solid green; width: 50%">
+        <h1>forst devision</h1>
+        <ul>
+          <li>First Item</li>
+          <li>Second Item</li>
+        </ul>
+      </div>
+      <div style="border: 2px solid green; width: 50%">
+        <h1>Second Division</h1>
+        <input type="text" />
+        <button onclick="btnClick()">Click me</button>
+      </div>
+    </div>
+    <script>
+      function btnClick() {
+        // console.log(document.documentElement);
+        // console.log(document.body);
+        // console.log(document.head);
+        const div1 = document.getElementById("div1");
+        // for (let i = 0; i < div1.childNodes.length; i++) {
+        //   console.log(div1.childNodes[i]);
+        // }
+        console.log(div1.firstElementChild);
+        console.log(div1.firstElementChild.nodeName);
+        console.log(div1.lastChild);
+        console.log(div1.lastElementChild);
+        console.log(div1.parentElement);
+        console.log(div1.parentNode);
+      }
+    </script>
+  </body>
+</html>
