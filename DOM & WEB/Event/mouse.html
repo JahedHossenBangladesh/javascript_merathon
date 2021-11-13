@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button
+      id="divEvent"
+       onclick="eventFunction('single click')"
+      oncontextmenu="eventFunction('Right click')"
+      ondblclick="eventFunction('double click')"
+      
+    >
+      click
+    </button> -->
+    <button
+      id="divEvent"
+      onmousedown="eventFunction('Mouse down')"
+      onmouseup="eventFunction('Mouse up')"
+      onmouseover="eventFunction('Mouse over')"
+      onmouseout="eventFunction('mouse out')"
+    >
+      click
+    </button>
+    <h1 id="msg2"></h1>
+    <script>
+      function eventFunction(msg1) {
+        let msg = document.getElementById("divEvent");
+        let msg2 = document.getElementById("msg2");
+        msg2.innerHTML = msg1;
+        msg.innerHTML = msg1;
+      }
+    </script>
+  </body>
+</html>
