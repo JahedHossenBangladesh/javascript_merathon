@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="love">I</p>
+    <h1 class="love">Love</h1>
+    <h2 class="love">you</h2>
+    <button onclick="changeIt()">querySelector</button>
+    <button onclick="alls()">queryAll</button>
+    <script>
+      function changeIt() {
+        let querySelector = document.querySelector(".love");
+        querySelector.innerHTML = "you";
+      }
+      function alls() {
+        let all = document.querySelectorAll(".love");
+        // all.innerHTML = "you";
+        console.log(all);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>I</p>
+    <h1 class="love">Love</h1>
+    <h2 name="you">you</h2>
+    <button onclick="changeIt()">changeIt</button>
+    <script>
+      function changeIt() {
+        let p1 = document.getElementsByTagName("p")[0];
+        p1.innerHTML = "you";
+
+        var h1 = document.getElementsByClassName("love")[0];
+
+        h1.innerHTML = `hate`;
+
+        let you = document.getElementsByName("you")[0];
+        you.innerHTML = "me";
+      }
+    </script>
+  </body>
+</html>

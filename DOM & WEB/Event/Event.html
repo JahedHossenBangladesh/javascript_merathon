@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert('not recomonded')">Inline</button>
+    <button onclick="fnClick()">function</button>
+    <button id="btn">btn</button>
+    <button id="btn1">btn1</button>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.onclick = () => {
+        alert("onClick in function");
+      };
+      const btn1 = document.getElementById("btn1");
+      btn1.addEventListener("click", clickInAddEventListener);
+      function clickInAddEventListener() {
+        alert("onClick in the add event listener");
+      }
+      function fnClick() {
+        alert("function Click");
+      }
+    </script>
+  </body>
+</html>
