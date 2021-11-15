@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="info"></h1>
+    <!-- <input
+      type="text"
+      onfocus="eventHandler('focus')"
+      onblur="eventHandler('blur')"
+      onChange="eventHandler('chage')"
+    /> -->
+    <input
+      type="text"
+      onfocus="eventHandler('focus')"
+      onChange="eventHandler('change')"
+    />
+    <br />
+    check: <input type="checkbox" onchange="eventHandler(this.checked)" />
+    <br />
+    radio 1:
+    <input
+      type="radio"
+      name="r"
+      value="radio 1"
+      onchange="eventHandler(this.value + '-' + this.checked)"
+    />
+    radio 2:
+    <input
+      type="radio"
+      name="r"
+      value="radio 2"
+      onchange="eventHandler(this.value + '-' + this.checked)"
+    />
+    <br />
+    <select
+      name=""
+      id=""
+      onchange="eventHandler(this.options[this.selectedIndex].text)"
+    >
+      <option value="1">option 1</option>
+      <option value="2">option 2</option>
+      <option value="3">option 3</option>
+      <option value="4">option 4</option>
+    </select>
+    <br />
+    <input type="text" name="" id="" oninput="eventHandler(this.value)" />
+    <br />
+    <input
+      type="text"
+      name=""
+      id=""
+      oncopy="eventHandler(this.value)"
+      onpaste="event.preventDefault()"
+      oncut="return false"
+    />
+    <script>
+      function eventHandler(msg) {
+        document.getElementById("info").innerHTML = msg;
+      }
+    </script>
+  </body>
+</html>

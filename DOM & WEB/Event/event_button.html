@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn" onmouseup="eventHandler()">click</button>
+    <script>
+      function eventHandler() {
+        let msg = "";
+        // if (event.button === 0) {
+        //   msg = "left is click";
+        // } else if (event.button === 1) {
+        //   msg = "middle button is click";
+        // } else if (event.button === 2) {
+        //   msg = "right button is click";
+        // }
+
+        if (event.ctrlKey) {
+          msg = "ctrl key is press";
+        }
+        if (event.shiftKey) {
+          msg = "shift key is press";
+        }
+        if (event.ctrlKey && event.shiftKey) {
+          msg = " ctrl + shift key is press";
+        }
+        document.getElementById("btn").innerHTML = msg;
+      }
+    </script>
+  </body>
+</html>
