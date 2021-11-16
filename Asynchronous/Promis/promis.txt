@@ -1,0 +1,1 @@
+you call a food delivery  store. they say they will send it . but for some issue they cant send it so it is reject. but they promise that they will send it  and they keep you pending . if they send it to you then it is resolve.
